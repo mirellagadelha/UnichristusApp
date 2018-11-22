@@ -5,7 +5,7 @@ export default StyleSheet.create({
     marginTop: 20,
     marginBottom: 20,
     marginLeft: 20,
-    marginRight: 20
+    marginRight: 20,
   },
   textBody: {
     textAlign: 'justify',
@@ -13,9 +13,9 @@ export default StyleSheet.create({
   },
   imageLogo: {
     width: '100%',
-    height: 200
+    height: 200,
   },
   iconLike: {
     color: '#032442',
-  }
+  },
 });
