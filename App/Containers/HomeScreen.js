@@ -13,8 +13,15 @@ import {
   Body,
 } from 'native-base';
 import styles from './Styles/HomeScreenStyles';
+import ServiceNews from '../Services/ServiceNews';
 
 export default class HomeScreen extends Component {
+  async componentDidMount() {
+    ServiceNews.getDataFromAPIAndSave();
+    const teste = await ServiceNews.getDataFromDB();
+    console.log(teste);
+  }
+  vou pra aula oh amor, queria nao ): ta fznd oq?
   render() {
     return (
       <Container>
@@ -54,7 +61,7 @@ export default class HomeScreen extends Component {
               <Left>
                 <Thumbnail source={require('../Images/news.png')} />
                 <Body>
-                  <Text>Lorem ipsum dolor sit amet</Text>
+                  <Text>Lorem ipsum olor sit amet</Text>
                   <Text note>5 de Novembro, 2018</Text>
                 </Body>
               </Left>
